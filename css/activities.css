@@ -1,0 +1,417 @@
+@charset "utf-8";
+/* CSS Document */
+
+h1{
+    position: relative;
+    margin: 0 0 1.5em;
+	padding-left:1em;
+    padding-bottom: 0.2em;
+	padding-top: 0.2em;
+    font-size: 2.4em;
+    font-weight: bold;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+	background-color:#e24040;
+	color:#FFFFFF;
+
+}
+ 
+h1:after{
+    position: absolute;
+    bottom: -14px;
+    left: 10%;
+    margin-left: -15px;
+    border-top: 15px solid #e24040;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 0;
+    content: "";
+}
+
+#headerContainer_pc{
+	background-color:rgba(240,78,78,0.4);
+}
+
+#headerContainer_sp{
+	background-color:#e24040;
+}
+
+h2{
+	color:#E24040;
+	border-bottom:2px solid #F76B6B;
+}
+
+
+/*ページ独自css*/
+
+
+.content{
+	width:100%;
+	margin:0 auto;
+	padding-top:30px;
+	padding-bottom:100px;
+}
+
+
+
+h4{
+	font-size:1.6em;
+}
+
+
+
+#activity{
+	padding:20px;
+}
+
+
+
+/** ここからカレンダー **/
+/**  timeline box structure  **/
+
+.timeline, .timeline-panel a{
+	color:#e24040;
+
+}
+
+.timeline, .timeline-panel a:hover{
+	color:inherit;
+
+}
+
+
+.timeline {
+  list-style: none;
+  padding: 20px 0 20px;
+  position: relative;
+}
+ 
+.timeline:before {
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  content: " ";
+  width: 3px;
+  background-color: #e24040;
+  left: 50%;
+  margin-left: -1.5px;
+  padding-bottom:30px;
+}
+ 
+.tldate {
+  display: block;
+  width: 200px;
+  background-color: #e24040;
+  border: 3px solid #e24040;
+  color:#FFF2F2;
+  margin: 0 auto;
+  padding: 5px 0;
+  font-size:1.5em;
+  text-align: center;
+  border-radius: 2px;
+
+
+}
+ 
+.timeline li {
+  margin-bottom: 200px;
+  position: relative;
+}
+
+
+/** timeline panels **/
+.timeline li .timeline-panel {
+  width: 40%;
+  float: left;
+  background-coror: #FFFFFF;
+  border: 2px solid #d4d4d4;
+  padding: 20px;
+  position: relative;
+  border-radius: 4px;
+  color: #5E5E5E;
+}
+
+
+/** panel arrows **/
+.timeline li .timeline-panel:before {
+  position: absolute;
+  top: 26px;
+  right: -15px;
+  display: inline-block;
+  border-top: 15px solid transparent;
+  border-left: 15px solid #d4d4d4;
+  border-right: 0 solid #d4d4d4;
+  border-bottom: 15px solid transparent;
+  content: " ";
+}
+
+
+ 
+.timeline li .timeline-panel:after {
+  position: absolute;
+  top: 27px;
+  right: -14px;
+  display: inline-block;
+  border-top: 14px solid transparent;
+  border-left: 14px solid #d4d4d4;
+  border-right: 0 solid #d4d4d4;
+  border-bottom: 14px solid transparent;
+  content: " ";
+}
+.timeline li .timeline-panel.noarrow:before, .timeline li .timeline-panel.noarrow:after {
+  top:0;
+  right:0;
+  display: none;
+  border: 0;
+}
+ 
+.timeline li.timeline-inverted .timeline-panel {
+  float: right;
+}
+ 
+.timeline li.timeline-inverted .timeline-panel:before {
+  border-left-width: 0;
+  border-right-width: 15px;
+  left: -15px;
+  right: auto;
+}
+ 
+.timeline li.timeline-inverted .timeline-panel:after {
+  border-left-width: 0;
+  border-right-width: 14px;
+  left: -14px;
+  right: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+/** media queries **/
+
+
+@media only screen and (min-width: 769px){
+    /*PC*/
+    .br-sp {
+		 display:none; 
+  }
+
+  .timeline li .timeline-panel {
+    width: 38%;
+  }
+
+  .timeline-panel{
+	  text-align:center;
+  }
+
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px){
+    /*タブレット*/
+
+
+ .page-header h1 {
+	font-size: 1.8em;
+}
+ 
+  ul.timeline:before {
+    left: 70px;
+  }
+ 
+ .tldate {
+	 width: 140px;
+  }
+ 
+  ul.timeline li .timeline-panel {
+    width: calc(100% - 140px);
+    width: -moz-calc(100% - 140px);
+    width: -webkit-calc(100% - 140px);
+  }
+ 
+  ul.timeline li  {
+    top: 22px;
+    left: 22px;
+    margin-left: 0;
+ 
+  }
+ 
+  ul.timeline > li > .tldate {
+    margin: 0;
+  }
+ 
+  ul.timeline > li > .timeline-panel {
+    float: right;
+  }
+ 
+  ul.timeline > li > .timeline-panel:before {
+    border-left-width: 0;
+    border-right-width: 15px;
+    left: -15px;
+    right: auto;
+  }
+ 
+  ul.timeline > li > .timeline-panel:after {
+    border-left-width: 0;
+    border-right-width: 14px;
+    left: -14px;
+    right: auto;
+  }
+
+
+
+}
+
+
+@media only screen and (max-width:480px) {
+    /*スマホ*/
+
+
+ .page-header h1 {
+	font-size: 1.8em;
+  }
+ 
+  ul.timeline:before {
+    left: 72px;
+  }
+ 
+  .tldate {
+    width: 140px;
+  }
+ 
+  ul.timeline li .timeline-panel {
+    width: calc(100% - 160px);
+    width: -moz-calc(100% - 160px);
+    width: -webkit-calc(100% - 160px);
+  }
+ 
+  ul.timeline li .tl-circ {
+    top: 22px;
+    left: 22px;
+    margin-left: 0;
+ 
+  }
+  ul.timeline > li > .tldate {
+    margin: 0;
+  }
+ 
+  ul.timeline > li > .timeline-panel {
+    float: right;
+  }
+ 
+  ul.timeline > li > .timeline-panel:before {
+    border-left-width: 0;
+    border-right-width: 15px;
+    left: -15px;
+    right: auto;
+  }
+ 
+  ul.timeline > li > .timeline-panel:after {
+    border-left-width: 0;
+    border-right-width: 14px;
+    left: -14px;
+    right: auto;
+  }
+
+}
+
+
+/*活動紹介*/
+
+
+@media only screen and (min-width:769px) {
+
+
+#activity{
+	margin:0 auto;
+
+}
+
+h2{
+	text-align:center;
+}
+
+#content1, #content2, #content3, #content4, #content5{
+	display:block;
+	width:100%;
+	padding-bottom:30px;
+	margin:0 auto;
+
+}
+
+.pageL,
+.pageR{
+	display:table-cell;
+	vertical-align:middle;
+
+}
+
+.pageL img,
+.pageR img{
+	width:300px;
+	height:auto;
+	padding-top:20px;
+	padding-bottom:20px;
+
+}
+
+.pageL {
+  width: 50%;
+  text-align: center;
+}
+
+.pageR{
+	width:50%;
+	line-height:1.75;
+}
+
+
+}
+
+
+@media only screen and (max-width:768px) {
+
+
+#activity{
+	display:table;
+	vertical-align:middle;
+	margin:0 auto;
+}
+
+#content1, #content2, #content3, #content4, #content5{
+	width:100%;
+	padding-bottom:30px;
+	display:block;
+}
+
+
+.pageL img,
+.pageR img{
+	display:block;
+	width:100%;
+	height:auto;
+	padding-top:20px;
+	padding-bottom:20px;
+
+}
+
+.pageL {
+  width: 100%;
+  text-align: center;
+}
+
+.pageR{
+	width:100%;	
+}
+
+
+
+
+}
+

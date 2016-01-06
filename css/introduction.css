@@ -1,0 +1,133 @@
+@charset "utf-8";
+/* CSS Document */
+
+h1{
+    position: relative;
+    margin: 0 0 1.5em;
+	padding-left:1em;
+    padding-bottom: 0.2em;
+	padding-top: 0.2em;
+    font-size: 2.4em;
+    font-weight: bold;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+	background-color:#dfd137;
+	color:#FFFFFF;
+
+}
+ 
+h1:after{
+    position: absolute;
+    bottom: -14px;
+    left: 10%;
+    margin-left: -15px;
+    border-top: 15px solid #dfd137;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 0;
+    content: "";
+}
+
+#headerContainer_pc{
+	background-color:rgba(223,209,55,0.6);
+}
+
+#headerContainer_sp{
+	background-color:#dfd137;
+}
+
+
+
+
+/*ページ独自css*/
+
+
+
+@media only screen and (min-width: 861px){
+
+
+#aboutus, #greeting{
+	display:table;
+	
+}
+
+.pageL, .pageR{
+  display: table-cell;
+
+}
+
+.pageL {
+  width: 400px;
+  padding-top:20px;  
+  vertical-align:text-top;
+}
+
+
+.pageR {
+
+  width: 600px;
+  vertical-align: middle;
+}
+
+
+.pageR p{
+	padding-left:22px;
+}
+
+
+.content{
+  display:table;
+  width:100%;
+  margin:0 auto;
+  padding-bottom:50px;
+}
+
+
+.page1, .page2, .page3{
+  display: table-cell;
+  vertical-align:text-top;
+}
+
+
+.page1{
+  width:28%;
+
+}
+
+.page2{
+  width:33%;
+}
+
+.page3{
+  width:37%;
+}
+
+
+
+}
+
+
+
+@media only screen and(max-width: 860px) {
+
+
+.pageL {
+	text-align:center;
+	}
+
+
+.pageR {
+  padding:10px;
+}
+
+.content{
+	width:80%;
+	padding:20px;
+	padding-bottom:50px;
+}
+
+
+}
+
+

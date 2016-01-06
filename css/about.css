@@ -1,0 +1,121 @@
+@charset "utf-8";
+/* CSS Document */
+
+h1{
+    position: relative;
+    margin: 0 0 1.5em;
+	padding-left:1em;
+    padding-bottom: 0.2em;
+	padding-top: 0.2em;
+    font-size: 2.4em;
+    font-weight: bold;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+	background-color:#df9237;
+	color:#FFFFFF;
+
+}
+ 
+h1:after{
+    position: absolute;
+    bottom: -14px;
+    left: 10%;
+    margin-left: -15px;
+    border-top: 15px solid #df9237;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 0;
+    content: "";
+}
+
+#headerContainer_pc{
+	background-color:rgba(229,149,55,0.4);
+}
+
+#headerContainer_sp{
+	background-color:#df9237;
+}
+
+
+h2{
+	color:#df9237;
+	border-bottom:2px solid #EFA720;
+}
+
+/*ページ独自css*/
+
+h2{
+	padding:10px 0;
+}
+
+.baitai{
+	font-size:1.6em;
+	font-family:"Source Sans Pro",'Trebuchet MS', 'Arial', 'Helvetica', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+}
+
+.bold{
+	font-size:1.5em;
+	padding-top:40px;
+}
+
+.content1, .content2, .content3, .content4{
+	padding-bottom:30px;
+	padding-top:30px;
+	
+}
+
+.c1, .c2, .c3, .c4{
+	padding-top:30px;
+	padding-bottom:20px;
+}
+
+
+@media only screen and (min-width: 769px) {
+
+.content{
+	text-align: center;
+}
+
+.pageConteiner{
+	text-align: center;
+	display:table;
+	vertical-align:middle;
+	margin:0 auto;
+}
+
+.pageL,
+.pageR {
+  display: table-cell;
+  vertical-align:text-top;
+}
+
+.pageL img,
+.pageR img{
+  height:150px;
+}
+
+.pageL {
+  width: 300px;
+}
+
+.pageR{
+	width:300px;	
+}
+
+
+}
+
+
+
+@media only screen and(max-width: 768px) {
+
+.content{
+	text-align:center;
+	display:block;
+}
+
+
+}
+
+
